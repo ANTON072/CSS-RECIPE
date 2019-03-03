@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="./common/normalize.css">
+  <link rel="stylesheet" href="./common/base.css">
+  <style>
+    .column {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-gap: 10px;
+    }
+    [class^="item-"], [class*=" item-"] {
+      padding: 10px;
+      background: skyblue;
+    }
+  </style>
+</head>
+
+<body>
+  <p>gridを使ったカードレイアウト</p>
+  <div class="column">
+    <div class="item-1">1列目1列目1列目1列目1列目1列目1列目1列目1列目1列目1列目1列目1列目1列目1列目1列目1列目1列目1列目1列目1列目1列目</div>
+    <div class="item-2">2列目</div>
+    <div class="item-3">3列目</div>
+    <div class="item-4">1列目2行目</div>
+    <div class="item-5">2列目2行目</div>
+  </div>
+</body>
+
+</html>
