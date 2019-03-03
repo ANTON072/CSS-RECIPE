@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="./common/normalize.css">
+  <link rel="stylesheet" href="./common/base.css">
+  <style>
+    body {
+      font-size: 14px;
+      line-height: 1.5;
+    }
+    @media (min-width: 320px) {
+      /* 320px以上 */
+      body {
+        /* calc((文字サイズの最大値 - 文字サイズの最小値) * ((100vw - 画面幅の最小値) / (画面幅の最大値 - 画面幅の最小値)) + 文字サイズの最小値) */
+        font-size: calc((18 - 14) * ((100vw - 320px) / (960 - 320)) + 14px);
+      }
+    }
+    @media (min-width: 960px) {
+      /* 960px以上 */
+      body {
+        font-size: 18px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <p>レスポンシブな文字サイズ</p>
+  <div class="container">
+    <div class="text">
+      引続き今に仮定性はもう同じ指導なくなだってが踏みているないには発展好かないですと、ずいぶんとも読まなならたず。学校が進んだろものははたして九月のいくらたなかっなけれ。引続き今に仮定性はもう同じ指導なくなだってが踏みているないには発展好かないですと、ずいぶんとも読まなならたず。学校が進んだろものははたして九月のいくらたなかっなけれ。引続き今に仮定性はもう同じ指導なくなだってが踏みているないには発展好かないですと、ずいぶんとも読まなならたず。学校が進んだろものははたして九月のいくらたなかっなけれ。引続き今に仮定性はもう同じ指導なくなだってが踏みているないには発展好かないですと、ずいぶんとも読まなならたず。学校が進んだろものははたして九月のいくらたなかっなけれ。
+    </div>
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="./common/normalize.css">
+  <link rel="stylesheet" href="./common/base.css">
+  <style>
+    .container {
+      margin: auto;
+      max-width: 400px;
+      background: skyblue;
+      padding: 0 calc(.5em + 2px);
+    }
+    .text {
+      display: inline;
+      padding: .3em 0;
+      line-height: 2;
+      background: skyblue;
+      box-shadow: .5em 0 skyblue,
+                  -.5em 0 skyblue,
+                  /* 上 */
+                  0 -2px #47485e,
+                  /* 下 */
+                  0 2px #47485e,
+                  /* 左上 */
+                  calc(-.5em - 2px) -2px #47485e,
+                  /* 右上 */
+                  calc(.5em + 2px) -2px #47485e,
+                  /* 左下 */
+                  calc(-.5em - 2px) 2px #47485e,
+                  /* 右下 */
+                  calc(.5em + 2px) 2px #47485e;
+    }
+  </style>
+</head>
+
+<body>
+  <p>囲み文字(ボーダー)</p>
+  <div class="container">
+    <div class="text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magnam ullam, quos beatae cum sunt culpa suscipit esse alias repellendus odit! Possimus ipsum illum explicabo nobis. Autem nulla accusamus quod ratione.</div>
+  </div>
+</body>
+
+</html>

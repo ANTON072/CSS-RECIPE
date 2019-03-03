@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="./common/normalize.css">
+  <link rel="stylesheet" href="./common/base.css">
+  <style>
+    .container {
+      width: 500px;
+    }
+    .text {
+      display: flex;
+      align-items: center;
+    }
+    .text::before,
+    .text::after {
+      display: block;
+      flex: 1 0 40px;
+      content: '';
+      border-top: 1px solid #000;
+    }
+
+    .text::before {
+      margin-right: 10px;
+    }
+
+    .text::after {
+      margin-left: 10px;
+    }
+  </style>
+</head>
+
+<body>
+  <p>文字の左右に水平線(複数行)</p>
+  <div class="container">
+    <div class="text">
+      引続き今に仮定性はもう同じ指導なくなだってが踏みているないには発展好かないですと、ずいぶんとも読まなならたず。学校が進んだろものははたして九月のいくらたなかっなけれ。
+    </div>
+  </div>
+</body>
+
+</html>

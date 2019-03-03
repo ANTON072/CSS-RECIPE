@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="./common/normalize.css">
+  <link rel="stylesheet" href="./common/base.css">
+  <style>
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+    }
+    .side {
+      background: skyblue;
+      /* flex: 1; */
+      flex: 1 0 auto;
+    }
+    .main {
+      background: orange;
+      /* 最低でも300pxの幅を確保する */
+      flex: 9999 0 300px;
+    }
+  </style>
+</head>
+
+<body>
+  <p>2カラムのうち、片方のカラムを可変にするレイアウト</p>
+  <div class="container">
+    <div class="side">文字量に応じたレイアウト文字量に応じたレイアウト</div>
+    <div class="main">文字量に応じたレイアウト文字量に応じたレイアウト文字量に応じたレイアウト文字量に応じたレイアウト文字量に応じたレイアウト文字量に応じたレイアウト文字量に応じたレイアウト文字量に応じたレイアウト文字量に応じたレイアウト文字量に応じたレイアウト</div>
+  </div>
+</body>
+
+</html>
