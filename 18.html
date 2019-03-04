@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="./common/normalize.css">
+  <link rel="stylesheet" href="./common/base.css">
+  <style>
+    .container {
+      margin: auto;
+      max-width: 400px;
+    }
+    .outer {
+      display: inline-block;
+      position: relative;
+      height: 150px;
+    }
+    .outer > img {
+      display: block;
+      width: auto;
+      height: 100%;
+    }
+    .inner {
+      font-size: 1.6em;
+      background-color: #a1c6e7;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+  </style>
+</head>
+
+<body>
+  <p>高さ基準のアスペクト比の固定</p>
+  <div class="container">
+    <div class="outer">
+      <img
+        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAABdwAAANMAQMAAAB8Tf1eAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAMpJREFUeNrswYEAAAAAgKD9qRepAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABg9uBAAAAAAADI/7URVFVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVWlPTgkAAAAABD0/7UnjAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMAkbzoAATuOTkUAAAAASUVORK5CYII=">
+      <div class="inner">16:9</div>
+    </div>
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="./common/normalize.css">
+  <link rel="stylesheet" href="./common/base.css">
+  <style>
+    .container {
+      margin: auto;
+      max-width: 600px;
+    }
+    .grid {
+      display: flex;
+      flex-wrap: wrap;
+      margin: -25px 0 0 -20px;
+    }
+    .column {
+      flex: 0 0 50%;
+      max-width: 50%;
+      padding: 25px 0 0 20px;
+      text-align: center;
+      /* 文字が正しく折り返される設定 */
+      min-width: 0;
+      word-wrap: break-word;
+    }
+    .column > div {
+      padding: .7em 0;
+      border: 1px solid #dfdad5;
+      background-color: #f4f2f0;
+    }
+    @media (min-width: 768px) {
+      .column {
+        flex: 0 0 33.33333%;
+        max-width: 33.33333%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <p style="margin-bottom: 100px;">Flexboxによるグリッドレイアウト</p>
+
+  <div class="container">
+    <div class="grid">
+      <div class="column">
+        <div>3分の1</div>
+      </div>
+      <div class="column">
+        <div>3分の1</div>
+      </div>
+      <div class="column">
+        <div>3分の1</div>
+      </div>
+      <div class="column">
+        <div>3分の1</div>
+      </div>
+      <div class="column">
+        <div>3分の1</div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
