@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="./common/normalize.css">
+  <link rel="stylesheet" href="./common/base.css">
+  <style>
+     .checkbox input {
+       position: absolute;
+       left: -9999em;
+     }
+     .checkbox span {
+       display: block;
+       position: relative;
+       padding-left: 1.4em;
+       user-select: none;
+     }
+     .checkbox span::before {
+       box-sizing: border-box;
+       position: absolute;
+       top: 50%;
+       left: 0;
+       width: 1em;
+       height: 1em;
+       content: '';
+       border: 1px solid #ccc;
+       border-radius: .15em;
+       transform: translateY(-50%);
+     }
+     .checkbox span::after {
+       box-sizing: border-box;
+       position: absolute;
+       top: .37em;
+       left: .35em;
+       width: .35em;
+       height: .7em;
+       border-right: 2px solid #333;
+       border-bottom: 2px solid #333;
+       transform: rotate(40deg);
+     }
+     .checkbox input:focus + span::before {
+       border-color: #4fa0e7;
+       box-shadow: 0 0 5px #0d7ee0;
+     }
+     .checkbox input:checked + span::after {
+       content: '';
+     }
+  </style>
+</head>
+
+<body>
+  <p>チェックボックス</p>
+  <div class="checkbox">
+    <label>
+      <input type="checkbox" name="" id="">
+      <span>ラベル</span>
+    </label>
+  </div>
+</body>
+
+</html>
