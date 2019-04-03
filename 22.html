@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="./common/normalize.css">
+  <link rel="stylesheet" href="./common/base.css">
+  <style>
+    .wrap {
+      display: flex;
+    }
+    .box {
+      border: 1px solid currentColor;
+      margin: 0 5px;
+    }
+    .box.green {
+      color: #00c84d;
+    }
+    .box.green {
+      color: #007bc8;
+    }
+    .box.red {
+      color: #ee1e2a;
+    }
+  </style>
+</head>
+
+<body>
+  <p>文字色の継承(currentColor)</p>
+  <div class="wrap">
+    <div class="box green">緑色</div>
+    <div class="box blue">青色</div>
+    <div class="box red">赤色</div>
+  </div>
+</body>
+
+</html>
